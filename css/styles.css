@@ -14,6 +14,7 @@
   --header-border-bottom-color: #ececec;
   --portfolio-content-border-color: #eeeeee;
   --footer-icon-bgcolor: rgba(255, 255, 255, 0.1);
+  --hero-background: #c4c4c4;
 }
 h1,
 h2,
@@ -147,9 +148,18 @@ header {
 /* main */
 /* hero */
 .hero {
-  background-color: var(--footer-background-color);
   padding: 200px 0;
   text-align: center;
+
+  background-color: var(--hero-background);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   margin-bottom: 30px;
