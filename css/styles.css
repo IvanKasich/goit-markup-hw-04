@@ -328,8 +328,6 @@ header {
   margin-right: 28px;
 }
 .clients-list-item {
-  border: 1px solid var(--icon-color);
-  border-radius: 4px;
 }
 .clients-link {
   display: flex;
@@ -338,13 +336,13 @@ header {
   padding: 16px 32px;
 
   fill: var(--icon-color);
-}
-.clients-list-item:hover,
-.clients-list-item:focus {
-  border: 1px solid var(--secondary-text-color);
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
 }
 .clients-link:hover,
-.clients-link:focus .client {
+.clients-link:focus,
+.clients-link:active .client {
+  border: 1px solid var(--secondary-text-color);
   fill: var(--secondary-text-color);
 }
 /* footer */
@@ -484,6 +482,7 @@ address {
   fill: var(--secondary-title-text-color);
 }
 .socials-footer-list-item-link:hover,
-.socials-footer-list-item-link:focus {
+.socials-footer-list-item-link:focus,
+.socials-footer-list-item-link:active {
   background-color: var(--secondary-text-color);
 }
