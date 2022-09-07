@@ -224,7 +224,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 25px 100px;
+  height: 120px;
   margin-bottom: 30px;
   background-color: var(--team-section-background-color);
   border-radius: 4px;
@@ -324,17 +324,23 @@ header {
 .socials-list-item-link:focus .socials-icon {
   fill: var(--secondary-title-text-color);
 }
+/* Clients */
 .clients-list {
   display: flex;
 }
 .clients-list-item:not(:last-child) {
   margin-right: 28px;
 }
+.clients-list-item {
+  width: 170px;
+  height: 92px;
+}
 .clients-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px 32px;
+  width: 100%;
+  height: 100%;
 
   fill: var(--icon-color);
   border: 1px solid var(--icon-color);
@@ -356,7 +362,8 @@ address {
 }
 .footer {
   display: flex;
-  gap: 93px;
+  align-items: baseline;
+  gap: 70px;
 }
 .contacts {
   background-color: var(--footer-background-color);
@@ -392,9 +399,6 @@ address {
   text-transform: uppercase;
 
   color: var(--secondary-title-text-color);
-}
-.join {
-  padding-top: 12px;
 }
 .footer-heading-socials {
   margin-bottom: 20px;
@@ -460,6 +464,11 @@ address {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+.portfolio-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
 .portfolio-content-list {
   display: flex;
   flex-wrap: wrap;
@@ -488,7 +497,8 @@ address {
   line-height: 1.9;
   letter-spacing: 0.03em;
 }
-.portfolio-content-list-item:hover {
+.portfolio-card:hover,
+.portfolio-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
